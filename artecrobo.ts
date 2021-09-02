@@ -39,6 +39,11 @@ namespace artecrobo {
 	let speedM2 = 1023;
 	let state = DCmotion.Brake;
 
+	/**
+	 * Set the motion of DC motor.
+	 * @param connector DC motor connector
+	 * @param motion DC motor motion
+	 */
 	// Move DC motor
 	//% blockId=artec_move_dc_motor
 	//% block="DC motor %_connector| motion: %_motion"
@@ -104,6 +109,11 @@ namespace artecrobo {
 		state = _motion;
 	}
 
+	/**
+	 * Set the speed of DC motor.
+	 * @param connector DC motor connector
+	 * @param speed DC motor speed
+	 */
 	//% blockId=artec_set_speed_dc_motor
 	//% block="DC motor %_connector| speed: %_speed"
 	//% _speed.min=0 _speed.max=1023
@@ -126,6 +136,11 @@ namespace artecrobo {
 	pins.servoWritePin(AnalogPin.P14, angleP14);
 	pins.servoWritePin(AnalogPin.P15, angleP15);
 
+	/**
+	 * Set the servo
+	 * @param connector ServoMotor connector
+	 * @param angle ServoMotor angle
+	 */
 	//% blockId=artec_move_servo_motor_max
 	//% block="move servo pin %_connector| to (degrees) %_angle"
 	//% _angle.min=0 _angle.max=180
@@ -150,6 +165,12 @@ namespace artecrobo {
 		}
 	}
 
+	/**
+	 * Set the servo with speed.
+	 * @param connector ServoMotor connector
+	 * @param angle ServoMotor angle
+	 * @param speed Speed
+	 */
 	//% blockId=artec_move_servo_motor
 	//% block="move servo pin %_connector| to (degrees) %_angle| speed: %_speed"
 	//% _angle.min=0 _angle.max=180
@@ -194,11 +215,11 @@ namespace artecrobo {
 	}
 
 	/**
-	 * Move Servo Motor Async.
-	 * @param speed speed
-	 * @param angle13 ServoMotor Angle P13
-	 * @param angle14 ServoMotor Angle P14
-	 * @param angle15 ServoMotor Angle P15
+	 * Move servo motor async.
+	 * @param speed Speed
+	 * @param angle13 ServoMotor angle P13
+	 * @param angle14 ServoMotor angle P14
+	 * @param angle15 ServoMotor angle P15
 	 */
 	//% weight=84
 	//% blockId=artec_async_move_servo_motor
