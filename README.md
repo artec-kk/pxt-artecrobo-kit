@@ -1,7 +1,7 @@
  
 # ArtecRobo
 
-[Extension for ArtecRobo](https://www.artec-kk.co.jp/en/images/056720.pdf#page=36)
+[Extension for ArtecRobo](https://www.ecolerobots.com/produit/carte-extension-microbit-avec-base/)
 
 ## Basic usage
 
