@@ -5,5 +5,4 @@
   ,"artecrobo.moveServoMotorMax|block": "サーボモーターを指定の角度にする"
   ,"artecrobo.moveServoMotor|block": "サーボモーターを指定の速度で指定の角度にする"
   ,"artecrobo.AsyncMoveServoMotor|block": "複数のサーボモーターを同時に動かす"
-  ,"artecrobo.lightSensor": "光センサーの値を取得する"
 }

@@ -28,11 +28,6 @@ enum connectorServoMotor {
 	P15 = AnalogPin.P15
 }
 
-enum connectorSensor{
-	P1 = AnalogPin.P1,
-	P2 = AnalogPin.P2
-}
-
 /**
  * ArtecRobo control package
  */
@@ -219,13 +214,6 @@ namespace artecrobo {
 		}
 	}
 
-
-	//% blockId=artec_move_servo_motor
-	//% block="light sensor pin %_connector"
-	export function lightSensor(_connector: connectorSensor): void {
-		return pins.analogReadPin(_connector);
-	}
-
 	/**
 	 * Move servo motor async.
 	 * @param speed Speed
@@ -316,6 +304,4 @@ namespace artecrobo {
 		if (diffP14 != 0) pins.servoWritePin(AnalogPin.P14, angleP14);
 		if (diffP15 != 0) pins.servoWritePin(AnalogPin.P15, angleP15);
 	}
-
-
 }
