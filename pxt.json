@@ -1,6 +1,6 @@
 {
     "name": "ArtecRobo",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Control ArtecRobo package, created by Artec.",
     "license": "MIT",
     "icon": "icon.png",
