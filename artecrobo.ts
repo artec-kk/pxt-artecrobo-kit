@@ -271,6 +271,7 @@ namespace artecrobo {
 		const name = getConnectorName(_connector)
 		if (ledStateIs(name, 'active')) {
 			set_led_state(name, { kind: 'idle' });
+			pins.digitalWritePin(_connector, 0);
 		}
 	}
 
